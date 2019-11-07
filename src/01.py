@@ -63,3 +63,17 @@ def my_function():
 
 
 print(my_function.__doc__)
+
+# 元组不可变，但是能包含可变对象，可变对象改变了，元组也会对应改变
+l1 = [1,2,3]
+l2 = [4,5,6]
+
+t1 = (l1,l2)
+l1[0] = 10
+print(t1)
+
+tk1 = (1,2)
+tk2 = (1,2)
+dict1 = {tk1: 'tk1'}
+print(dict1.get(tk1))
+print(dict1.get(tk2))
