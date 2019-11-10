@@ -77,3 +77,6 @@ tk2 = (1,2)
 dict1 = {tk1: 'tk1'}
 print(dict1.get(tk1))
 print(dict1.get(tk2))
+
+import builtins
+dir(builtins)
